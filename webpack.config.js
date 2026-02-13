@@ -1,5 +1,6 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const { watchFile } = require('fs');
 
 module.exports = {
   mode: 'development', 
@@ -10,6 +11,11 @@ module.exports = {
     clean: true,
   },
   devtool: 'inline-source-map', 
+  devServer: {
+    watchFiles: ["./src/template.html"],
+    hot: true,
+    open: true,
+  },
   plugins: [
     new HtmlWebpackPlugin({
       title: 'Todo List', 
