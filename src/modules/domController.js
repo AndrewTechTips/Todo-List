@@ -1,4 +1,4 @@
-import {format} from 'date-fns';
+import { format } from 'date-fns';
 import todoManager from './todoManager.js';
 
 //Helper function to empty a html element
@@ -98,7 +98,7 @@ function createTodoCard(todo) {
     title.textContent = todo.title;
 
     if(todo.isComplete) {
-        title.classList.add.apply("completed-text")
+        title.classList.add("completed-text")
     }
 
     const description = document.createElement("div");
