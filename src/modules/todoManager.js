@@ -1,5 +1,5 @@
-import Project from "./Project";
-import Todo from "./Todo";
+import Project from "./Project.js";
+import Todo from "./Todo.js";
 
 //We re keeping projects list private, and it cannot be accessed from outside
 let projects = [];

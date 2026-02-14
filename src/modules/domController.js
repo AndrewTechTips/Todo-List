@@ -1,5 +1,5 @@
 import {format} from 'date-fns';
-import todoManager from './todoManager';
+import todoManager from './todoManager.js';
 
 //Helper function to empty a html element
 function clearElement(element) {

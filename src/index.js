@@ -1,7 +1,7 @@
 import './style.css';
 
-import todoManager from './modules/todoManager';
-import render from './modules/domController';
+import todoManager from './modules/todoManager.js';
+import render from './modules/domController.js';
 
 //Pulling the elements:
 
