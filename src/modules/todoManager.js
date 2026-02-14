@@ -58,6 +58,6 @@ export default {
     setCurrentProject,
     createProject,
     deleteProject,
-    addTodoToCurrentProjects
+    addTodoToCurrentProject
 };
 
