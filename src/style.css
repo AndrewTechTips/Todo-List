@@ -274,7 +274,7 @@ form {
 label {
     font-size: 0.9rem;
     color: var(--text-muted);
-    margin-bottom: -0.5rem;
+    margin-bottom: 0.5rem;
 }
 
 input, textarea, select {
@@ -285,6 +285,17 @@ input, textarea, select {
     color: var(--text-main);
     font-size: 1rem;
     outline: none;
+}
+
+.row-inputs {
+    display: flex;
+    gap: 1rem;
+}
+
+.input-group {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
 }
 
 input:focus, textarea:focus {
@@ -320,6 +331,8 @@ input:focus, textarea:focus {
 .btn-cancel:hover{
     background: rgba(255, 255, 255, 0.05);
 }
+
+
 
 
 
