@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+
+    <html lang="en"><head><script defer src="main.js"></script></head>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Todo List</title>
+
+        <link rel="icon" href="https://img.icons8.com/fluency/48/checked.png">
+
+
+    <body>
+        <div id="content">
+
+            <nav class="sidebar">
+                <div class="sidebar-header">
+                    <h2>Projects</h2>
+                </div>
+
+                <ul id="projects-list" class="projects-list">
+                    <li class="active-project" data-project-id="default">Inbox</li>
+                </ul>
+
+                <button id="add-project-btn" class="btn-add-project">
+                    + New Project
+                </button>
+            </nav>
+
+            <main class="main-content">
+                <header class="main-header">
+                    <h1 id="project-title">Inbox</h1>
+                    <p id="task-count">0 tasks remaining</p>
+                </header>
+
+                <div id="todos-container" class="todos-container">
+
+                </div>
+
+                <button id="add-task-btn" class="btn-float">
+                    +
+                </button>
+            </main>
+        </div>
+
+        <dialog id="dialog-project" class="modal">
+            <form method="dialog">
+                <h3>Create Project</h3>
+                <label for="project-name">Project Name</label>
+                <input type="text" id="project-name" name="project-name" required placeholder="e.g Gym, Work">
+
+                <div class="modal-buttons">
+                    <button type="button" id="close-project-modal" class="btn-cancel">Cancel</button>
+                    <button type="submit" id="submit-project" class="btn-confirm">Create</button>
+                </div>
+            </form>
+        </dialog>
+
+        <dialog id="dialog-todo" class="modal">
+            
+            <form method="dialog">
+                <h3 id="modal-title">Add New Tasks</h3>
+
+                <label for="todo-title">Task Title</label>
+                <input type="text" id="todo-title" required placeholder="What needs to be done?" maxlength="40">
+
+                <label for="todo-desc">Description</label>
+                <textarea id="todo-desc" placeholder="Add some details..."></textarea>
+
+                <div class="row-inputs">
+                    <div class="input-group">
+                        <label for="todo-date">Due Date</label>
+                        <input type="date" id="todo-date" required>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="todo-priority">Priority</label>
+                        <select id="todo-priority">
+                            <option value="low">Low</option>
+                            <option value="medium" selected>Medium</option>
+                            <option value="high">High</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="modal-buttons">
+                    <button type="button" id="close-todo-modal" class="btn-cancel">Cancel</button>
+                    <button type="submit" id="submit-todo" class="btn-confirm">Save Task</button>
+                </div>
+            </form>
+        </dialog>
+        
+    </body>
+
+</html>
