@@ -102,7 +102,7 @@ function createTodoCard(todo) {
         title.classList.add("completed-text")
     }
 
-    const description = document.createElement("div");
+    const description = document.createElement("p");
     description.textContent = todo.description;
 
     infoDiv.appendChild(title);
