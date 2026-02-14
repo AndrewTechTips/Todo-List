@@ -88,6 +88,7 @@ function createTodoCard(todo) {
 
     checkbox.addEventListener("change", () => {
         todo.toggleComplete();
+        todoManager.saveData();
         renderTodos();
     });
 
@@ -128,6 +129,7 @@ function createTodoCard(todo) {
         e.stopPropagation();
         const currentProject = todoManager.getCurrentProject();
         currentProject.removeTodo(todo.id);
+        todoManager.saveData();
         render();
     });
 

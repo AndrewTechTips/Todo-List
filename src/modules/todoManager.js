@@ -111,6 +111,6 @@ export default {
     createProject,
     deleteProject,
     addTodoToCurrentProject,
-    saveDatas
+    saveData
 };
 
